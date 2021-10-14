@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
     $(".firstSlider").hide()
     var currimg = $(".firstSlider").first()
     var index = 0;
@@ -34,4 +34,4 @@ $(function () {
 
         currimg.fadeIn();
     });
-})
+});
