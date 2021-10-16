@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Arsara2</string>
+    
+    <string-array name="title_story">
+        <item>Sura dan Baya</item>
+        <item>Malin Kundang</item>
+    </string-array>
+
+</resources>

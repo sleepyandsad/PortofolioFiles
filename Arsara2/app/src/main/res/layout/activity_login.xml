@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".Login">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hg10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hg90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vg10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vg90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+
+        <TextView
+            android:id="@+id/arsara2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/bungee"
+            android:text="Sara"
+            android:textColor="@color/black"
+            android:textSize="30pt"
+            android:layout_marginRight="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/arsara1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/bungee"
+            android:text="AR"
+            android:textColor="#63ccc5"
+            android:textSize="30pt"
+            android:layout_marginLeft="55dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editUsername1"
+            app:layout_constraintTop_toBottomOf="@+id/arsara1"
+            app:layout_constraintLeft_toLeftOf="@id/vg10"
+            app:layout_constraintRight_toLeftOf="@id/vg90"
+            android:layout_width="0dp"
+            android:hint="Username"
+            android:background="@drawable/editborder"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/editPassword1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/editborder"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@id/vg10"
+            app:layout_constraintRight_toLeftOf="@id/vg90"
+            app:layout_constraintTop_toBottomOf="@+id/editUsername1" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#63ccc5"
+            android:text="Login"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/vg10"
+            app:layout_constraintRight_toLeftOf="@id/vg90"
+            app:layout_constraintTop_toBottomOf="@id/editPassword1"
+            />
+
+        <TextView
+            android:id="@+id/AR_nusantara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AR Nusantara"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/vg10"
+            app:layout_constraintRight_toLeftOf="@id/vg90"
+            android:textSize="10pt"
+            android:fontFamily="@font/fugaz"
+            android:layout_marginTop="10pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/hg90" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
